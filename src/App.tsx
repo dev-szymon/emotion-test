@@ -8,7 +8,7 @@ const App: React.FC = () => (
   <pre>
    {JSON.stringify({ "0": "black", "1": "white", "2": "red" }, null, 2)}
   </pre>
-  {/* <AppProvider
+  <AppProvider
    theme={{
     breakpoints: ["1px", "9999px", "9999px"],
     button: { backgroundColor: "blue" },
@@ -19,7 +19,7 @@ const App: React.FC = () => (
     borderRadius={responsive("0px", "8px", "20px")}
     fontSize={["8px", "8px", "14px", "20px"]}
    />
-  </AppProvider> */}
+  </AppProvider>
   <AppProvider
    theme={{
     breakpoints: ["300px", "350px", "700px"],

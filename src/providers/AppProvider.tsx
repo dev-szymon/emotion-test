@@ -1,6 +1,9 @@
 import React, { memo, useCallback, useState, ReactElement } from "react";
-import { CacheProvider, EmotionCache } from "@emotion/core";
-import { ThemeProvider as EmotionThemeProvider } from "emotion-theming";
+import {
+ CacheProvider,
+ EmotionCache,
+ ThemeProvider as EmotionThemeProvider,
+} from "@emotion/react";
 import shadow from "react-shadow";
 import createCache from "@emotion/cache";
 import { ButtonTheme } from "../components/Button/Button.theme";

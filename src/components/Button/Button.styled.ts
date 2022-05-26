@@ -1,5 +1,5 @@
 import { up } from "../../utils/up";
-import { styled } from "./Button.theme";
+import { ButtonTheme, styled } from "./Button.theme";
 import {
  background,
  border,
@@ -44,7 +44,8 @@ export const ButtonContainer = styled.button`
  font-family: sans-serif;
  border: none;
  margin: 10px;
- background-color: ${({ theme }) => theme.button.backgroundColor};
+ background-color: ${({ theme }: { theme: ButtonTheme }) =>
+  theme.button.backgroundColor};
  color: black;
  ${up(1)} {
   width: 200px;

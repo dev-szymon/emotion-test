@@ -1,5 +1,5 @@
 import CSS from "csstype";
-import emotionStyled, { CreateStyled } from "@emotion/styled";
+import emotionStyled from "@emotion/styled";
 
 export type ButtonTheme = {
  button: {
@@ -7,4 +7,4 @@ export type ButtonTheme = {
  };
 };
 
-export const styled: CreateStyled<ButtonTheme> = emotionStyled;
+export const styled = emotionStyled;
