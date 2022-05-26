@@ -3,7 +3,7 @@ import emotionStyled from "@emotion/styled";
 
 export type ButtonTheme = {
  button: {
-  backgroundColor: CSS.Property.BackgroundColor;
+  color: CSS.Property.BackgroundColor;
  };
 };
 

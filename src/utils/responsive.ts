@@ -11,5 +11,5 @@ export function responsive<T>(AdPanel: T, Mobile: T, Desktop: T): [T, T, T, T];
  */
 export function responsive<T>(...args: Array<T>): Array<T> {
  //With standard breakpoints, it results in [below AdPanel, AdPanel->Mobile, Mobile->Desktop, Desktop and above]
- return [args[0], ...args];
+ return [...args];
 }

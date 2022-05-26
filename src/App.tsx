@@ -6,30 +6,28 @@ import { responsive } from "./utils/responsive";
 const App: React.FC = () => (
  <div>
   <pre>
-   {JSON.stringify({ "0": "black", "1": "white", "2": "red" }, null, 2)}
+   {JSON.stringify({ "0": "black", "1": "blue", "2": "red" }, null, 2)}
   </pre>
   <AppProvider
    theme={{
     breakpoints: ["1px", "9999px", "9999px"],
-    button: { backgroundColor: "blue" },
+    button: { color: "white" },
    }}
   >
-   <Button />
    <Button
-    borderRadius={responsive("0px", "8px", "20px")}
-    fontSize={["8px", "8px", "14px", "20px"]}
+    // backgroundColor={responsive("black", "blue", "red")}
+    backgroundColor={["black", "black", "blue", "red"]}
    />
   </AppProvider>
   <AppProvider
    theme={{
     breakpoints: ["300px", "350px", "700px"],
-    button: { backgroundColor: "blue" },
+    button: { color: "white" },
    }}
   >
-   <Button />
    <Button
-    borderRadius={responsive("0px", "8px", "20px")} // responsive util does not work with 2 providers
-    fontSize={["8px", "8px", "14px", "20px"]} // array works fine
+    // backgroundColor={responsive("black", "blue", "red")} // responsive util does not work with 2 providers
+    backgroundColor={["black", "black", "blue", "red"]} // array works fine - skrrrr wrong!! not working!
    />
   </AppProvider>
  </div>
