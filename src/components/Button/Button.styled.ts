@@ -44,15 +44,13 @@ export const ButtonContainer = styled.button`
  font-family: sans-serif;
  border: none;
  margin: 10px;
- background-color: ${({ theme }) => theme.button.backgroundColor};
- color: black;
+ color: ${({ theme }) => theme.button.color};
+ background-color: black;
  ${up(1)} {
-  width: 200px;
-  color: white;
+  background-color: blue;
  }
  ${up(2)} {
-  width: 300px;
-  color: red;
+  background-color: red;
  }
  ${composedHelpers}
 `;
