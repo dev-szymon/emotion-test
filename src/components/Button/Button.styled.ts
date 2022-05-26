@@ -45,12 +45,12 @@ export const ButtonContainer = styled.button`
  border: none;
  margin: 10px;
  color: ${({ theme }) => theme.button.color};
- background-color: black;
+ /* background-color: black; */
  ${up(1)} {
-  background-color: blue;
+  /* background-color: blue; */
  }
  ${up(2)} {
-  background-color: red;
+  /* background-color: red; */
  }
  ${composedHelpers}
 `;

@@ -12,23 +12,19 @@ const App: React.FC = () => (
    theme={{
     breakpoints: ["1px", "9999px", "9999px"],
     button: { color: "white" },
+    disableStyledSystemCache: true,
    }}
   >
-   <Button
-   // backgroundColor={responsive("black", "blue", "red")}
-   // backgroundColor={["black", "black", "blue", "red"]}
-   />
+   <Button backgroundColor={responsive("black", "blue", "red")} />
   </AppProvider>
   <AppProvider
    theme={{
     breakpoints: ["300px", "350px", "700px"],
     button: { color: "white" },
+    disableStyledSystemCache: true,
    }}
   >
-   <Button
-   // backgroundColor={responsive("black", "blue", "red")} // responsive util does not work with 2 providers
-   // backgroundColor={["black", "black", "blue", "red"]} // array works fine
-   />
+   <Button backgroundColor={responsive("black", "blue", "red")} />
   </AppProvider>
  </div>
 );

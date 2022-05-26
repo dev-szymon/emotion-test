@@ -12,7 +12,10 @@ const SSG_MODULE_CLASS_NAME = "ssg-module"; //used as emotion cache key and root
  */
 const AppProvider: React.FC<{
  children: ReactElement | ReactElement[];
- theme: { breakpoints: `${number}px`[] } & ButtonTheme;
+ theme: {
+  breakpoints: `${number}px`[];
+  disableStyledSystemCache?: boolean;
+ } & ButtonTheme;
 }> = ({ children, theme }) => {
  const [emotionCache, setEmotionCache] = useState<EmotionCache | null>(null);
 
